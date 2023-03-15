@@ -21,7 +21,7 @@ class Quiz extends Component {
             {isQuizEnd ?
             <QuizEnd />:
             <QuizQuestion
-             quiz_question = {quizData.quiz_questions[0]}
+             quiz_question = {quizData.quiz_questions[this.state.quiz_position-1]}
              showNextQuestionHandler = {this.showNextQuestion.bind(this)}
              />
             }
